@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Your Name</title>
+  <meta name="description" content="Rendering and graphics projects by Your Name.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION (same on every page; "active" marks the current one) ===== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-name">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE TITLE ===== -->
+    <section class="container page-intro">
+      <h1>Projects</h1>
+      <p class="tagline">Renderers, shaders, and graphics experiments, newest first.</p>
+    </section>
+
+    <!-- ===== PROJECT LIST =====
+         To add a project: copy one <article class="project"> block.
+         The id="..." lets the home page link straight to it (projects.html#project-one). -->
+    <section class="container project-list">
+
+      <!-- Project with an IMAGE -->
+      <article class="project" id="project-one">
+        <div class="project-media">
+          <img src="assets/images/project1.jpg" alt="Render from Project One">
+        </div>
+        <div class="project-info">
+          <p class="project-meta">2025 · Course project</p>
+          <h2>Project One</h2>
+          <p>
+            What problem you tackled and why it matters. Then the approach:
+            the algorithm, data structures, or tricks you used.
+          </p>
+          <p>
+            The result, with a number if you have one (for example, "renders a
+            1M-triangle scene at 60 fps on a laptop GPU").
+          </p>
+          <ul class="tags small-tags">
+            <li>C++</li><li>OpenGL</li><li>GLSL</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/your-username/project-one" class="btn">Code</a>
+            <a href="assets/project-one-report.pdf" class="btn">Report (PDF)</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project with a short self-hosted VIDEO (keep MP4 under ~15 MB) -->
+      <article class="project" id="project-two">
+        <div class="project-media">
+          <video src="assets/videos/project2.mp4" poster="assets/images/project2.jpg"
+                 autoplay muted loop playsinline></video>
+        </div>
+        <div class="project-info">
+          <p class="project-meta">2024 · Personal project</p>
+          <h2>Project Two</h2>
+          <p>
+            A short looping clip shows a renderer in motion better than a
+            screenshot. Describe what the viewer is seeing in the clip.
+          </p>
+          <ul class="tags small-tags">
+            <li>C++</li><li>Vulkan</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/your-username/project-two" class="btn">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project with a YOUTUBE embed (best for longer videos) -->
+      <article class="project" id="project-three">
+        <div class="project-media">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Project Three demo" loading="lazy"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-info">
+          <p class="project-meta">2023 · Game jam</p>
+          <h2>Project Three</h2>
+          <p>Replace VIDEO_ID with the ID from your YouTube link.</p>
+          <ul class="tags small-tags">
+            <li>Unity</li><li>HLSL</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/your-username/project-three" class="btn">Code</a>
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID" class="btn">Watch on YouTube</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <p>Reach me at <a href="mailto:you@example.com">you@example.com</a></p>
+      <p class="small">© 2026 Your Name</p>
+    </div>
+  </footer>
+
+</body>
+</html>
