@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Your Name</title>
-  <meta name="description" content="Rendering and graphics projects by Your Name.">
+  <meta name="description" content="Computer graphics, game engine, and machine learning projects by Your Name.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,82 +30,260 @@
     <!-- ===== PAGE TITLE ===== -->
     <section class="container page-intro">
       <h1>Projects</h1>
-      <p class="tagline">Renderers, shaders, and graphics experiments, newest first.</p>
+      <p class="tagline">Renderers, game engines, and machine learning projects from my M.S. at DigiPen.</p>
     </section>
 
     <!-- ===== PROJECT LIST =====
          To add a project: copy one <article class="project"> block.
-         The id="..." lets the home page link straight to it (projects.html#project-one). -->
+         The id="..." lets the home page link straight to it (projects.html#advanced-graphics).
+
+         TODO before publishing:
+           1. Replace each "#" in the Code / Demo buttons with the real GitHub or demo URL.
+           2. Drop a screenshot for each project into assets/images/ using the file
+              name in its <img src="...">. For a clip instead, swap the <img> for
+              <video src="assets/videos/NAME.mp4" poster="assets/images/NAME.jpg"
+                     autoplay muted loop playsinline></video>
+              or a YouTube embed:
+              <div class="video-embed"><iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                   title="Demo" loading="lazy" allowfullscreen></iframe></div> -->
+
+    <!-- ===================================================== -->
+    <!-- ===== COMPUTER GRAPHICS & GAME DEVELOPMENT ========== -->
+    <!-- ===================================================== -->
     <section class="container project-list">
 
-      <!-- Project with an IMAGE -->
-      <article class="project" id="project-one">
+      <h2 class="project-group">Computer Graphics &amp; Game Development</h2>
+
+      <!-- Advanced Computer Graphics -->
+      <article class="project" id="advanced-graphics">
         <div class="project-media">
-          <img src="assets/images/project1.jpg" alt="Render from Project One">
+          <img src="assets/images/advanced-graphics.png" alt="Render from the Advanced Computer Graphics project">
         </div>
         <div class="project-info">
-          <p class="project-meta">2025 · Course project</p>
-          <h2>Project One</h2>
+          <p class="project-meta">DigiPen · Course project</p>
+          <h2>Advanced Computer Graphics</h2>
           <p>
-            What problem you tackled and why it matters. Then the approach:
-            the algorithm, data structures, or tricks you used.
+            Extended a prebuilt C++/OpenGL framework with the core 3D rendering
+            pipeline, including homogeneous coordinate transformations and
+            perspective projection, plus a physically based GLSL microfacet BRDF
+            with diffuse, specular, and Fresnel terms.
           </p>
           <p>
-            The result, with a number if you have one (for example, "renders a
-            1M-triangle scene at 60 fps on a laptop GPU").
+            Added texture mapping, sky dome rendering, normal mapping, and
+            dual-paraboloid environment reflections, a two-pass shadow mapping
+            pipeline using FBOs, and HDR image-based lighting with irradiance maps.
           </p>
           <ul class="tags small-tags">
-            <li>C++</li><li>OpenGL</li><li>GLSL</li>
+            <li>C++</li><li>OpenGL</li><li>GLSL</li><li>PBR</li><li>Shadow Mapping</li>
           </ul>
           <div class="links">
-            <a href="https://github.com/your-username/project-one" class="btn">Code</a>
-            <a href="assets/project-one-report.pdf" class="btn">Report (PDF)</a>
+            <a href="#" class="btn">Code</a>
           </div>
         </div>
       </article>
 
-      <!-- Project with a short self-hosted VIDEO (keep MP4 under ~15 MB) -->
-      <article class="project" id="project-two">
+      <!-- Advanced Real-Time Rendering -->
+      <article class="project" id="real-time-rendering">
         <div class="project-media">
-          <video src="assets/videos/project2.mp4" poster="assets/images/project2.jpg"
-                 autoplay muted loop playsinline></video>
+          <img src="assets/images/real-time-rendering.png" alt="Deferred shading scene with many local lights">
         </div>
         <div class="project-info">
-          <p class="project-meta">2024 · Personal project</p>
-          <h2>Project Two</h2>
+          <p class="project-meta">DigiPen · Course project</p>
+          <h2>Advanced Real-Time Rendering</h2>
           <p>
-            A short looping clip shows a renderer in motion better than a
-            screenshot. Describe what the viewer is seeing in the clip.
+            A deferred shading pipeline in OpenGL that supports many dynamic local
+            lights for scalable real-time rendering.
+          </p>
+          <p>
+            Implemented Moment Shadow Mapping for soft, high-quality shadows,
+            PBR/HDR image-based lighting with spherical-harmonic irradiance maps,
+            and screen-space ambient occlusion with bilateral filtering to reduce
+            noise.
           </p>
           <ul class="tags small-tags">
-            <li>C++</li><li>Vulkan</li>
+            <li>C++</li><li>OpenGL</li><li>Deferred Shading</li><li>MSM</li><li>SSAO</li><li>IBL</li>
           </ul>
           <div class="links">
-            <a href="https://github.com/your-username/project-two" class="btn">Code</a>
+            <a href="#" class="btn">Code</a>
           </div>
         </div>
       </article>
 
-      <!-- Project with a YOUTUBE embed (best for longer videos) -->
-      <article class="project" id="project-three">
+      <!-- 2D Game Engine -->
+      <article class="project" id="2d-game-engine">
         <div class="project-media">
-          <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="Project Three demo" loading="lazy"
-                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+          <img src="assets/images/2d-game-engine.png" alt="Screenshot of the game built on the custom 2D engine">
         </div>
         <div class="project-info">
-          <p class="project-meta">2023 · Game jam</p>
-          <h2>Project Three</h2>
-          <p>Replace VIDEO_ID with the ID from your YouTube link.</p>
+          <p class="project-meta">DigiPen · Team project (4 members)</p>
+          <h2>2D Game Engine</h2>
+          <p>
+            A custom game engine built from scratch in C++ and OpenGL. I designed
+            the UI systems and debugging tools and contributed to the rendering
+            pipeline.
+          </p>
+          <p>
+            The team built and evaluated three gameplay prototypes, picked the
+            most viable concept, and shipped it as a fully functional game.
+          </p>
           <ul class="tags small-tags">
-            <li>Unity</li><li>HLSL</li>
+            <li>C++</li><li>OpenGL</li><li>Engine Architecture</li>
           </ul>
           <div class="links">
-            <a href="https://github.com/your-username/project-three" class="btn">Code</a>
-            <a href="https://www.youtube.com/watch?v=VIDEO_ID" class="btn">Watch on YouTube</a>
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3D Game Engine -->
+      <article class="project" id="3d-game-engine">
+        <div class="project-media">
+          <img src="assets/images/3d-game-engine.png" alt="Screenshot of the game built on the custom 3D engine">
+        </div>
+        <div class="project-media">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/FY9VYuyMAtY"
+                  title="3D Game Engine demo" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/watch?v=FY9VYuyMAtY" class="btn">Watch on YouTube</a>
+        <div class="project-info">
+          <p class="project-meta">DigiPen · Team project (4 members) · Graphics Programmer &amp; Producer</p>
+          <h2>3D Game Engine</h2>
+          <p>
+            Designed and implemented core engine systems with a focus on rendering
+            and graphics pipeline features.
+          </p>
+          <p>
+            Built gameplay systems on top of the engine to keep engine and game
+            tightly integrated, and ran playtests to iterate on performance and
+            player experience.
+          </p>
+          <ul class="tags small-tags">
+            <li>C++</li><li>OpenGL</li><li>Rendering</li>
+          </ul>
+          <div class="links">
+            <a href="#" class="btn">Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- ===== MACHINE LEARNING & DEEP LEARNING ============== -->
+    <!-- ===================================================== -->
+    <section class="container project-list">
+
+      <h2 class="project-group">Machine Learning &amp; Deep Learning</h2>
+
+      <!-- Speech Emotion Recognition -->
+      <article class="project" id="speech-emotion-recognition">
+        <div class="project-media">
+          <img src="assets/images/speech-emotion.jpg" alt="Classifier comparison charts for speech emotion recognition">
+        </div>
+        <div class="project-info">
+          <p class="project-meta">DigiPen · Machine Learning 1</p>
+          <h2>Speech Emotion Recognition</h2>
+          <p>
+            Compared Random Forest and SVM classifiers on 6-class emotion
+            recognition using CREMA-D (7,442 audio samples), measuring balanced
+            accuracy and macro-AUC to judge performance under class imbalance.
+          </p>
+          <p>
+            SVM reached a macro-AUC of 0.82 vs. 0.80 for Random Forest. Tuned
+            Random Forest efficiency with constrained depth, feature subsampling,
+            and SelectFromModel, and analyzed scalability trade-offs for deployment.
+          </p>
+          <ul class="tags small-tags">
+            <li>Python</li><li>NumPy</li><li>scikit-learn</li><li>Seaborn</li><li>Matplotlib</li>
+          </ul>
+          <div class="links">
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Movie Recommender -->
+      <article class="project" id="movie-recommender">
+        <div class="project-media">
+          <img src="assets/images/movie-recommender.jpg" alt="RMSE comparison for the movie recommender models">
+        </div>
+        <div class="project-info">
+          <p class="project-meta">DigiPen · Machine Learning 2 · Team project</p>
+          <h2>Hybrid Movie Recommender System</h2>
+          <p>
+            Co-developed a hybrid recommender on MovieLens 100K (943 users, 1,682
+            movies, ~94–97% sparsity) combining cluster-based KNN collaborative
+            filtering, SVD matrix factorization, and a knowledge-based recommender.
+          </p>
+          <p>
+            K-means++ segmentation brought KNN RMSE down to 1.112 and tuned SVD
+            reached 1.067. The hybrid weights collaborative and knowledge-based
+            scores dynamically, with fallback logic so every user gets
+            recommendations.
+          </p>
+          <ul class="tags small-tags">
+            <li>Python</li><li>NumPy</li><li>SVD</li><li>K-means++</li><li>KNN</li>
+          </ul>
+          <div class="links">
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CNN Image Classification -->
+      <article class="project" id="cnn-image-classification">
+        <div class="project-media">
+          <img src="assets/images/cnn-classification.jpg" alt="Training curves for the CNN image classifiers">
+        </div>
+        <div class="project-info">
+          <p class="project-meta">DigiPen · Deep Learning</p>
+          <h2>CNNs for Image Classification</h2>
+          <p>
+            Designed and trained CNN architectures on CIFAR-10, CIFAR-100, and
+            Animal-10, reaching ~78% validation accuracy on CIFAR-10, and applied
+            transfer learning with MobileNetV2 using two-phase fine-tuning.
+          </p>
+          <p>
+            Built a config-driven experiment pipeline with checkpointing and
+            CSV/TensorBoard logging, using EarlyStopping, ReduceLROnPlateau, and
+            class weighting to stabilize training under class imbalance.
+          </p>
+          <ul class="tags small-tags">
+            <li>TensorFlow</li><li>Keras</li><li>MobileNetV2</li><li>Google Colab</li>
+          </ul>
+          <div class="links">
+            <a href="#" class="btn">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DQN Vacuum Agent -->
+      <article class="project" id="dqn-vacuum-agent">
+        <div class="project-media">
+          <img src="assets/images/dqn-vacuum.jpg" alt="DQN vacuum agent cleaning a grid environment">
+        </div>
+        <div class="project-info">
+          <p class="project-meta">DigiPen · Deep Learning</p>
+          <h2>Deep Reinforcement Learning: DQN Vacuum Agent</h2>
+          <p>
+            A Deep Q-Network built from scratch in PyTorch, with experience replay,
+            epsilon-greedy exploration, target networks, and custom reward shaping
+            to train an agent to navigate and clean grid environments.
+          </p>
+          <p>
+            Scaled training across 5×5, 10×10, and 15×15 grids and visualized
+            training progress and agent behavior with text output and Pygame.
+          </p>
+          <ul class="tags small-tags">
+            <li>Python</li><li>PyTorch</li><li>Pygame</li><li>Reinforcement Learning</li>
+          </ul>
+          <div class="links">
+            <a href="#" class="btn">Code</a>
           </div>
         </div>
       </article>
