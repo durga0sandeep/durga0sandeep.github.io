@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Durga Sandeep — Graphics & Rendering</title>
-  <meta name="description" content="Portfolio of Your Name: real-time rendering, OpenGL, and graphics research.">
+  <meta name="description" content="Portfolio of Durga Sandeep: real-time rendering, OpenGL, and graphics research.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@
       <ul class="nav-links">
         <li><a href="index.html#about" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+         <!--<li><a href="index.html#cv">CV</a></li>-->
+         <!--<li><a href="#contact">Contact</a></li>-->
       </ul>
     </nav>
   </header>
@@ -29,27 +29,21 @@
 
     <!-- ===== HERO / ABOUT ===== -->
     <section id="about" class="hero container">
-      <img src="assets/images/profile.png" alt="Photo of Your Name" class="profile-photo">
+      <img src="assets/images/profile.png" alt="Photo of Durga Sandeep" class="profile-photo">
       <div class="hero-text">
         <h1>Durga Sandeep</h1>
-        <p class="tagline">Graphics programmer</p>
+        <p class="tagline">Graphics programmer · Real-time rendering</p>
         <p>
-          I am interested in real-time rendering and graphics systems, and I am applying to PhD
-          programs to pursue research in this area. I recently completed a master's in computer
-          science, where my work focused on engine development and real-time rendering in C++ and OpenGL.
-
+          I recently completed an M.S. in Computer Science at DigiPen Institute of Technology (2026), specializing in real-time rendering, and I am applying to PhD programs in computer graphics. My graduate work includes physically based shading, HDR image-based lighting, deferred shading, moment shadow mapping, and screen-space ambient occlusion in C++, OpenGL, and GLSL.
         </p>
         <p>
-          Before graduate school, I spent nine years as a game developer and mentor, building 2D and 3D mobile
-          games and gameplay systems in Unity. I have also taught and mentored students,
-          which shaped how I communicate technical ideas clearly.
+          Before graduate school, I spent three years as a professional game developer, building and shipping 2D and 3D mobile games in Unity and C#. I then spent more than five years as an Assistant Professor, teaching game programming and mentoring student teams from concept to finished product, which shaped how I explain technical ideas clearly.
         </p>
 
         <div class="links">
-          <a href="mailto:durgasandeep.n@outlook.com" class="btn">Email</a>
-          <a href="https://github.com/durga0sandeep" class="btn">GitHub</a>
-          <a href="https://www.linkedin.com/in/durga-sandeep/" class="btn">LinkedIn</a>
-          <a href="assets/DugraSandeep_Namballa_Resume.pdf" class="btn btn-primary">CV (PDF)</a>
+          <a href="https://github.com/durga0sandeep/Portfolio_ProjectLinks" class="btn" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/durga-sandeep-n/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="assets/DugraSandeep_Namballa_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">RESUME (PDF)</a>
         </div>
       </div>
     </section>
@@ -60,38 +54,39 @@
       <ul class="tags">
         <li>Physically based rendering</li>
         <li>Real-time global illumination</li>
-        <li>Neural rendering</li>
-        <li>GPU programming</li>
-      </ul>
+              </ul>
     </section>
 
     <!-- ===== PROJECTS ===== -->
     <!-- Short preview: pick your 2 best projects. The full list lives on projects.html -->
     <section id="projects" class="container">
       <div class="section-head">
-        <h2>Selected projects</h2>
+        <h2>Academic Projects</h2>
         <a href="projects.html" class="see-all">See all projects →</a>
       </div>
       <div class="project-grid">
         
         <article class="card">
-          <img src="assets/images/project1.jpg" alt="Render from Project One">
+          <img src="assets/images/advanced-graphics.png" alt="Render from the Advanced Computer Graphics project">
           <div class="card-body">
-            <h3>Project One</h3>
-            <p>One or two sentences: what you built, the technique, and the result.</p>
-            <p class="stack">C++ · OpenGL · GLSL</p>
-            <a href="projects.html#project-one">Details →</a>
+            <h3>Advanced Computer Graphics</h3>
+            <p>A C++/OpenGL rendering pipeline with a physically based microfacet BRDF,
+               normal mapping, dual-paraboloid reflections, shadow mapping, and HDR
+               image-based lighting.</p>
+            <p class="stack">C++ · OpenGL · GLSL · PBR</p>
+            <a href="projects.html#advanced-graphics">Details →</a>
           </div>
         </article>
 
         <article class="card">
-          <video src="assets/videos/project2.mp4" poster="assets/images/project2.jpg"
-                 autoplay muted loop playsinline></video>
+          <img src="assets/images/real-time-rendering.png" alt="Deferred shading scene with many local lights">
           <div class="card-body">
-            <h3>Project Two</h3>
-            <p>A short looping clip works well for showing a renderer in motion.</p>
-            <p class="stack">C++ · Vulkan</p>
-            <a href="projects.html#project-two">Details →</a>
+            <h3>Advanced Real-Time Rendering</h3>
+            <p>A deferred shading pipeline supporting many dynamic local lights, with
+               Moment Shadow Mapping, spherical-harmonic IBL, and SSAO with bilateral
+               filtering.</p>
+            <p class="stack">C++ · OpenGL · Deferred Shading · SSAO</p>
+            <a href="projects.html#real-time-rendering">Details →</a>
           </div>
         </article>
 
@@ -125,8 +120,8 @@
   <!-- ===== FOOTER ===== -->
   <footer id="contact" class="site-footer">
     <div class="container">
-      <p>Reach me at <a href="mailto:you@example.com">durgasandeep.n@outlook.com</a></p>
-      <p class="small">© 2026 Your Name</p>
+      <p>Reach me at <a href="mailto:durgasandeep.n@outlook.com">durgasandeep.n@outlook.com</a></p>
+      <p class="small">© 2026 Durga Sandeep</p>
     </div>
   </footer>
 
